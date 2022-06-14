@@ -1,0 +1,83 @@
+    #main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #circle {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: rgb(138, 209, 253);
+        box-shadow: #8290ff 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #8290ff 0 -3px 0 inset;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    
+    button {
+        margin-top: 27px;
+        width: 100px;
+        height: 50px;
+        border-radius: 40px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    #btn-start {
+        background-color: rgb(7, 166, 25);
+    }
+    
+    #btn-stop {
+        background-color: rgb(7, 166, 25);
+    }
+    
+    #btn-flag {
+        background-color: rgb(20, 123, 178);
+    }
+    
+    #btn-reset {
+        background-color: rgb(255, 90, 90);
+    }
+    
+    .delete {
+        background-color: black;
+        width: 70px;
+        height: 32px;
+        position: relative;
+        top: -5px;
+    }
+    
+    button:focus {
+        box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+        border: 2px solid black;
+    }
+    
+    button:hover {
+        box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+        transform: translateY(-2px);
+    }
+    
+    button:active {
+        box-shadow: #3c4fe0 0 3px 7px inset;
+        transform: translateY(2px);
+        border: 2px solid black;
+    }
+    
+    #content {
+        font-size: 50px;
+        display: flex;
+        flex-direction: row;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    #time-data {
+        position: absolute;
+        font-size: 30px;
+        left: 20px;
+    }
+    
+    #head {
+        margin-left: 55px;
+    }

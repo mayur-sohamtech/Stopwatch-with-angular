@@ -1,0 +1,21 @@
+<div id="main">
+    <div id="time-data">
+        <ng-container *ngFor="let time of timerArray;let i=index">
+            <div id="del{{i}}">{{i+1}}) {{time}} <button (click)="deleteFlag(i)" class="delete">Delete</button></div>
+        </ng-container>
+    </div>
+    <div id="circle">
+        <div id="content">
+            <div id="hours">{{hour | number:'2.0-5'}}</div>
+            <div>:</div>
+            <div id="minit">{{minute | number:'2.0-5'}}</div>
+            <div>:</div>
+            <div id="second">{{second | number:'2.0-5'}}</div>
+        </div>
+    </div>
+    <div>
+        <button (click)="startTimer(btnName)" id="btn-start">{{btnName}}</button>
+        <button (click)="resetTimer()" id="btn-reset">Reset</button>
+        <button (click)="flagTimer()" id="btn-flag">Flag</button>
+    </div>
+</div>
